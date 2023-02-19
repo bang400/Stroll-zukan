@@ -6,10 +6,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'FlutterHajimeniKakuYatu',
       home: Scaffold(
         appBar: AppBar(
-          title: Text('タイトルバーネーム'),
+          title: Text('Strol Zukan'),
         ),
         body: Text(
           'テキストスタイル',
