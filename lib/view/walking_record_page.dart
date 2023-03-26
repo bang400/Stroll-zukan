@@ -7,14 +7,14 @@ class WalkingRecordPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('Stroll Zukan'),
+          title: Text('散歩を記録'),
         ),
         body: GoogleMap(
           initialCameraPosition: CameraPosition(
-              zoom: 17,
-              target: LatLng(35.0, 135.0),
-              tilt: 45.0,
-              bearing: 90.0
+              zoom:17,  // カメラのズームレベル
+              target: LatLng(35.6811673, 139.7670516), // カメラが指している地理的な場所。
+              tilt: 45.0, // 地底からのカメラアングルの角度
+              bearing: 90.0 //北から時計回りに測定された、度単位のカメラの方位。
           ),
         )
     );

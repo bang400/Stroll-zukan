@@ -1,6 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:stroll_zukan/route_config.dart';
+import 'package:stroll_zukan/view/my_cource_page.dart';
 import 'walking_record_page.dart';
+import 'dart:io' show Platform;
 
 class HomePage extends StatelessWidget {
   @override
@@ -32,7 +35,7 @@ class HomePage extends StatelessWidget {
                     onPressed:(){
                       Navigator.push(
                         context,
-                        CupertinoPageRoute(builder: (context) => WalkingRecordPage()),
+                        MyRoute.getRoute(MyCourcePage()),
                       );
                     },
                     child: Text(
@@ -58,7 +61,7 @@ class HomePage extends StatelessWidget {
                     onPressed:(){
                       Navigator.push(
                         context,
-                        CupertinoPageRoute(builder: (context) => WalkingRecordPage()),
+                        MyRoute.getRoute(WalkingRecordPage()),
                       );
                     },
                     child: Text(
