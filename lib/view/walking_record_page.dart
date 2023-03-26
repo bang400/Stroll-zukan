@@ -10,6 +10,7 @@ class WalkingRecordPage extends StatelessWidget {
           title: Text('散歩を記録'),
         ),
         body: GoogleMap(
+          // onMapCreated:を追加する
           initialCameraPosition: CameraPosition(
               zoom:17,  // カメラのズームレベル
               target: LatLng(35.6811673, 139.7670516), // カメラが指している地理的な場所。
