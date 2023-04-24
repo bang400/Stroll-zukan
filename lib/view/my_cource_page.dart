@@ -10,7 +10,7 @@ class MyCourcePage extends StatelessWidget {
           title: Text('マイコース'),
         ),
         body: Center(
-
+          // マイコースの処理
         )
     );
   }
